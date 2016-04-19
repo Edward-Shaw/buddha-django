@@ -50,7 +50,15 @@ Run 'python manage.py makemigrations' to create migrations for those changes.
 Run 'python manage.py migrate' to apply those changes to the database.
 ```
 - Playing with the API
-
+```
+Related objects reference: https://docs.djangoproject.com/en/1.9/ref/models/relations/
+Field lookups: https://docs.djangoproject.com/en/1.9/topics/db/queries/#field-lookups-intro
+Making queries: https://docs.djangoproject.com/en/1.9/topics/db/queries/
+```
+- Introducing the Django Admin
+```
+to be continue...
+```
 
 ## Tips
 ### 1.Three-step guide to making model changes:
