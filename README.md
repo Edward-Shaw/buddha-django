@@ -5,7 +5,7 @@ a django site for buddha teachings.
 https://docs.djangoproject.com/en/1.9/misc/design-philosophies/#dry
 
 ## road map
-> [click here to begin my work](https://docs.djangoproject.com/en/1.9/intro/tutorial02/)
+> [click here to begin my work](https://docs.djangoproject.com/en/1.9/intro/tutorial03/)
 
 - [Creating a project](https://docs.djangoproject.com/en/1.9/intro/tutorial01/)
 ```
@@ -56,8 +56,31 @@ Field lookups: https://docs.djangoproject.com/en/1.9/topics/db/queries/#field-lo
 Making queries: https://docs.djangoproject.com/en/1.9/topics/db/queries/
 ```
 - Introducing the Django Admin
+``` python
+# Create a user who can login to the admin site.
+python manage.py createsuperuser
+# enter username
+Username: admin
+# enter email address
+Email address: xxx@xxx.com
+# enter password twice
+Password: xxxxx
+Password (again): xxxxx
+Superuser created successfully
+# start server and enter admin site
+python manage.py runserver
+http://127.0.0.1:8000/admin
 ```
-to be continue...
+- ** Make content of teachings modifiable in the admin **
+``` python
+teachings/admin.py
+from django.contrib import admin
+from .models import Article
+admin.site.register(Article)
+```
+- Writing more views.
+```
+To be continue...
 ```
 
 ## Tips
