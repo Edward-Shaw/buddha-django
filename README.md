@@ -80,7 +80,7 @@ admin.site.register(Article)
 ```
 - Writing more views.
 ```
-To be continue...
+To be continued...
 ```
 
 ## Tips
